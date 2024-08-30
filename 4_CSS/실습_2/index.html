@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        div{
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 255, 255);
+            color: aliceblue;
+        }
+
+        .image-container{
+            display: inline-block;
+        }
+
+        #wrap{
+            width: 100%;
+            min-width: 1200px;
+            height: 800px;
+        }
+
+        #header{
+            display: flex; /* 플렉스 박스로 레이아웃 */
+            align-items: center; /* 세로 중앙 정렬 */
+            width: 100%;
+            height: 100px;
+        }
+
+        #header>div{
+            height: 100%;
+            display: flex; /* 플렉스 박스로 내부 정렬 */
+            align-items: center; /* 세로 중앙 정렬 */ 
+        }
+
+        #header>div>img{
+            height: 100%;
+        }
+
+
+        #menu-3bar{
+            
+            width: 100px;
+        }
+
+        #youtube-logo{
+            width: 25%;
+        }
+
+        #search-bar{
+            width: 30%;
+        }
+
+        #search-chang{
+            width: 80%;
+            height: 100%;
+        }
+
+        #voice{
+            width: 5%;
+        }
+
+        #recode-bell-myImg{
+            display: flex;
+            justify-content: end;
+            border: 2px solid blue;
+            width: 35%;
+        }
+
+        #recode-bell-myImg>img{
+            float: right;
+        }
+
+
+        #content{
+            width: 100%;
+            height: calc(100% - 100px);
+        }
+
+        #content>div{ 
+            float: left;
+        }
+
+        #leftBar{
+            width: 80px;
+            height: 100%;
+        }
+
+        #content-1{
+            width: calc(100% - 80px);
+            height: 100%;
+        }
+
+        #content-1>div{
+            height: 33.3%;
+        }
+
+        #content-1>div>div{
+            float: left;
+            height: 100%;
+            width: 25%;
+        }
+
+        #content-1>div>div>div{
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"> <!--헤더 메뉴 / 유튜브로고 / 검색창 / 녹화아이콘 / 동영상 / 종 / 프사-->
+            <div class="image-container" id="menu-3bar"><button><img src="./십습문제 이미지2/icons/hamburger-menu.svg" width="110%"  alt=""></button></div>
+            <div id="youtube-logo"><button><img src="./십습문제 이미지2/icons/youtube-logo.svg" width="45%" alt=""></button></div>
+            <div id="search-bar"><input type="text" id="search-chang" placeholder="검색창"><img src="./십습문제 이미지2/icons/search.svg" height="100%" alt=""></div>
+            <div id="voice"><img src="./십습문제 이미지2/icons/voice-search-icon.svg" alt=""></div>
+            <div id="recode-bell-myImg">
+                <img src="./십습문제 이미지2/icons/upload.svg" height="100%" alt="">
+                <img src="./십습문제 이미지2/icons/notifications.svg" alt="">
+                <img src="./십습문제 이미지2/images/avatars/avatar-1.png" alt="">
+            </div>
+
+            
+        </div>
+
+        <div id="content">
+            <div id="leftBar"> <!--왼쪽 사이드바 ( 홈 / 쇼츠 / 구독 / 나 )-->
+
+            </div>
+
+            <div id="content-1">
+                <div>
+                    <div>
+                        <div><img src="/실습_2/십습문제 이미지2/images/thumbnails/thumbnail01.PNG" alt=""></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div><img src="/실습_2/십습문제 이미지2/images/thumbnails/thumbnail01.PNG" alt=""></div>
+                        <div>아래</dd></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div></div>
+    </div>
+
+
+    <script>
+        const divs = document.querySelectorAll('#content-1 > div > div > div');
+
+    </script>
+
+</body>
+</html>
