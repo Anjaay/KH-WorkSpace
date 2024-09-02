@@ -3,207 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>youtube</title>
     <style>
         body{
-            padding: 0;
-            margin: 0;
             background-color: black;
         }
-        div{
-            box-sizing: border-box;
-            border: 1px solid rgb(255, 255, 255);
-            color: aliceblue;
-        }
 
-        .image-container{
-            display: inline-block;
+        div{
+            border: 1px solid white;
         }
 
         #wrap{
             width: 100%;
-            min-width: 1200px;
             height: 800px;
         }
 
-        #header{
-            display: flex; /* 플렉스 박스로 레이아웃 */
-            align-items: center; /* 세로 중앙 정렬 */
+        .header{
             width: 100%;
-            height: 100px;
+            height: 85px;
         }
 
-        #header>div{
+        .header>div{
             height: 100%;
-            display: flex; /* 플렉스 박스로 내부 정렬 */
-            align-items: center; /* 세로 중앙 정렬 */ 
-        }
-
-        #header>div>img{
-            height: 100%;
-        }
-
-
-        #menu-3bar{
-            
-            width: 100px;
-        }
-
-        #youtube-logo{
-            width: 25%;
-        }
-
-        #search-bar{
-            width: 30%;
-        }
-
-        #search-chang{
-            width: 80%;
-            height: 100%;
-        }
-
-        #voice{
-            width: 5%;
-        }
-
-        #recode-bell-myImg{
-            display: flex;
-            justify-content: end;
-            border: 2px solid blue;
-            width: 35%;
-        }
-
-        #recode-bell-myImg>img{
-            float: right;
-        }
-
-
-        #content{
-            width: 100%;
-            height: calc(100% - 100px);
-        }
-
-        #content>div{ 
             float: left;
         }
 
-        #leftBar{
-            width: 80px;
-            height: 100%;
-        }
-
-        #content-1{
-            width: calc(100% - 80px);
-            height: 100%;
-        }
-
-        #content-1>div{
-            height: 33.3%;
-        }
-
-        #content-1>div>div{
-            float: left;
-            height: 100%;
-            width: 25%;
-        }
-
-        #content-1>div>div>div{
-            
-        }
+        
 
     </style>
-
-
 </head>
 <body>
     <div id="wrap">
-        <div id="header"> <!--헤더 메뉴 / 유튜브로고 / 검색창 / 녹화아이콘 / 동영상 / 종 / 프사-->
-            <div class="image-container" id="menu-3bar"><button><img src="./십습문제 이미지2/icons/hamburger-menu.svg" width="110%"  alt=""></button></div>
-            <div id="youtube-logo"><button><img src="./십습문제 이미지2/icons/youtube-logo.svg" width="45%" alt=""></button></div>
-            <div id="search-bar"><input type="text" id="search-chang" placeholder="검색창"><img src="./십습문제 이미지2/icons/search.svg" height="100%" alt=""></div>
-            <div id="voice"><img src="./십습문제 이미지2/icons/voice-search-icon.svg" alt=""></div>
-            <div id="recode-bell-myImg">
-                <img src="./십습문제 이미지2/icons/upload.svg" height="100%" alt="">
-                <img src="./십습문제 이미지2/icons/notifications.svg" alt="">
-                <img src="./십습문제 이미지2/images/avatars/avatar-1.png" alt="">
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="./십습문제 이미지2/icons/hamburger-menu.svg" width="100px" alt="메뉴버튼">
+                <img class="youtube-logo" src="./십습문제 이미지2/icons/youtube-logo.svg" width="100px" alt="유튜브로고">
             </div>
-
             
-        </div>
-
-        <div id="content">
-            <div id="leftBar"> <!--왼쪽 사이드바 ( 홈 / 쇼츠 / 구독 / 나 )-->
-
+            <div class="middle-section">
+                <input class="search-bar" type="text">
+                <button class="search-button">
+                    <img src="" alt="">
+                    <div class="tooltip">검색</div>
+                </button>
+                <button class="voice-search-icon">
+                    <img src="./십습문제 이미지2/icons/voice-search-icon.svg" width="100px" alt="음성 검색">
+                </button>
             </div>
 
-            <div id="content-1">
-                <div>
-                    <div>
-                        <div><img src="/실습_2/십습문제 이미지2/images/thumbnails/thumbnail01.PNG" alt=""></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div><img src="/실습_2/십습문제 이미지2/images/thumbnails/thumbnail01.PNG" alt=""></div>
-                        <div>아래</dd></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-
+            <div class="right-section">
+                <img src="./십습문제 이미지2/icons/upload.svg" width="100px" alt="업로드">
             </div>
-        </div>
+            <div class="notifications">
+                <img src="./십습문제 이미지2/icons/notifications.svg" width="100px" alt="알림">
+            </div>
+        </header>
 
-        <div></div>
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="./십습문제 이미지2/icons/home.svg" width="100px" alt="홈버튼">
+                <div>홈</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="./십습문제 이미지2/icons/originals.svg" width="100px" alt="shorts버튼">
+                <div>Shorts</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="./십습문제 이미지2/icons/subscriptions.svg" width="100px" alt="구독버튼">
+                <div>구독</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="./십습문제 이미지2/icons/library.svg" width="100px" alt="내 버튼">
+                <div>나</div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="video-grid">
+
+            </section>
+
+        </main>
     </div>
-
-
-    <script>
-        const divs = document.querySelectorAll('#content-1 > div > div > div');
-
-    </script>
 
 </body>
 </html>
