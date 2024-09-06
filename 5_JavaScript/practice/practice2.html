@@ -24,25 +24,24 @@
     <button onclick="accessName()">입력값 출력하기</button>
     <br><br>
     <div id="area1" class="area" style="background: bisque;"></div>
-
     <!-- 
         구매자 : xxx
         상품명 : xxx
         가격 : xxx 
     -->
-
     <script>
-        function accessname(){
-            const buyer = document.getElementsByName("rn")[0].value
-            const product = document.getElementsByid("rn")[0].value
+        function accessName(){
+            //구매자 정보, 상품정보, 가격정보 가져와서
+            const buyer = document.getElementsByTagName("input")[0].value
+            const product = document.getElementById("product").value
             const price = document.getElementsByName("price")[0].value
+            //area1 -> id를 가진 요소에 정보 입력
 
-            const str = '구매자 : ' ${buyer}
+            const str = `구매자 : ${buyer}<br>상품명 : ${product}<br>가격 : ${price}`;
+            document.querySelector("#area1").innerHTML = str;
+            // const divEl = document.querySelector("#area1")
+            // divEl.innerHTML = str;
         }
-
     </script>
-
-
-
 </body>
 </html>

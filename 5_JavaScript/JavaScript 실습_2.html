@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        legend{
+            text-align: center;
+            
+            justify-content: space-evenly;
+        }
+
+        form > input {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        fieldset{
+            display: flex;
+            justify-content: center;
+        }
+
+        #titleBox{
+            background-color: rgb(161, 161, 161);
+            width: 100%;
+            height: 100px;
+            display: flex;           /* flex박스로 만들기 */
+            flex-direction: column; /* 행과 열을 반대로 */
+            align-items: start;     /* 열 맨 앞에 */
+            justify-content: center; /* 반대로 바뀌어서 높이 중간정렬 */
+        }
+
+        .aa{
+            margin: 0px;
+            margin-left: 10px;
+        }
+
+        #titleBox > div > input{
+            width: 300px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>practice5</h1>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>검색할 항목을 선택하세요</legend>
+            <input name="search" type="radio">제목
+            <input name="search" type="radio">날짜
+            <input name="search" type="radio">작성자
+        </fieldset>
+        <br>
+        <div id="titleBox">
+            <p class="aa">검색할 제목을 입력하세요 :</p>
+            <div class="aa" id="search">
+                 <input type="text">
+                 <button>검색</button>
+            </div>
+           
+        </div>
+    </form>
+
+
+
+</body>
+</html>
