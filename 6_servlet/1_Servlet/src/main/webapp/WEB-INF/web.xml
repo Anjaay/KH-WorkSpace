@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-  <!-- web.xml파일
- 	-해당 웹 애플리케이션을 구동시키는 서버 start시 제일 읽혀지는 파일
-	-배포 서술자라고 해서 해당 웹 애플리케이션의 기본적인 설정들을 작성하게 되어있음
-	- 개발자가 web.xml을 수정하지 않고도 개발 및 운영이 가능하다.
-	서비스 규모가 커지면 다양한 filter, servlet, wapper등 사용하고자 할 때 수정하면 된다.
-   -->
-  
-  
   <display-name>1_Servlet</display-name>
-  
-  <!-- 
-  </welcome-file-list>
-  url로 해당 애플리케이션의 루트로 요청 시 제일 먼저 보여지는 페이지
-  http://구동중인 서버의 ip: 포트번호 / 애플리케이션 contextpath
-  http:localhost:5000/st
-  
-  해당 welcome파일들은 webapp/에 위치해있어야 찾아서 반환해준다.
-   -->
-  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>RequestPostServlet</display-name>
+    <servlet-name>RequestPostServlet</servlet-name>
+    <servlet-class>com.kh.controller.RequestPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestPostServlet</servlet-name>
+    <url-pattern>/RequestPostServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestPostServelt</display-name>
+    <servlet-name>RequestPostServelt</servlet-name>
+    <servlet-class>com.kh.controller.RequestPostServelt</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>test2.do</param-name>
+      <param-value></param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestPostServelt</servlet-name>
+    <url-pattern>/RequestPostServelt</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>test2.do</display-name>
+    <servlet-name>test2.do</servlet-name>
+    <servlet-class>com.kh.controller.RequestPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test2.do</servlet-name>
+    <url-pattern>/test2.do</url-pattern>
+  </servlet-mapping>
 </web-app>
